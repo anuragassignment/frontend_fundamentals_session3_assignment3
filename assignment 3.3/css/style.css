@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 108px;
+    font-family: monospace;
+    background: url("http://i.imgur.com/Rm2NpV2.jpg") no-repeat;
+    margin: 0;
+    background-size: cover;
+}
+
+main,
+footer {
+    color: #fff;
+}
+
+main p {
+    padding: 0 8px 0 8px;
+}
+
+main article {
+    padding: 0 0 120px 0;
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.75);
+    position: relative;
+    z-index: 2;
+}
+
+
+/*Header and Navigation styles--------------------------------------------------------------*/
+
+nav h2 {
+    display: none;
+}
+
+header nav {
+    list-style: none;
+    display: inline-block;
+}
+
+header nav li {
+    float: left;
+    position: relative;
+}
+
+header nav li a {
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+body>header {
+    margin-bottom: 40px;
+    padding: 0 8px 0 8px;
+}
+
+header li a h4 {
+    padding-right: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #3598db;
+    font-size: 15px;
+}
+
+header h1 {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    color: #35D8F9;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    vertical-align: sub;
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    top: 0;
+    z-index: 3;
+}
+
+.container {
+    position: relative;
+}
+
+
+/*----Clearfix---------------------------------------------------------------------------------*/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*main body Styles-----------------------------------------------------------------------------*/
+
+p {
+    font-size: 17px;
+}
+
+
+/*---------------------About us div styles-----------------------------------------------------*/
+
+#aboutUs {
+    margin: 90px 0;
+}
+
+
+/*--------------------Aside section styles-----------------------------------------------------*/
+
+aside {
+    height: 500px;
+    width: 100%;
+    overflow: scroll;
+    font-size: 2em;
+    background: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+aside h2,
+figcaption {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+
+figure {
+    margin: 0;
+}
+
+
+/*=============================================Dropdown CSS==========================================*/
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #3598db;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    position: relative;
+    right: 8px;
+}
+
+#social {
+    display: inline-block;
+    padding-right: 0;
+    margin-right: 4px;
+}
+
+a ul {
+    position: absolute;
+    display: none;
+    width: 135px;
+    top: 48px;
+}
+
+a ul li {
+    float: none;
+    background-color: #ffffff;
+    padding: 10px;
+    color: #3598db;
+    font-size: 13px;
+    border-bottom: 1px solid #eaf8ff;
+}
+a ul li:last-child{
+    border:none;
+}
+
+li:hover ul {
+    display: block;
+    border: 1px solid #35D8F9;
+}
+
+a ul li:hover {
+    background-color: #35D8F9;
+    color: white;
+}
